@@ -4,7 +4,7 @@ const selectorTime = ["1day", "1week", "1hour"];
 
 const OptionsMenu = () => {
   return (
-    <ul className="menu menu-horizontal rounded-box border dark:border-light-20 h-full p-0">
+    <ul className="menu menu-horizontal rounded-box border dark:border-light-20 h-full p-0 overflow-hidden">
       {selectorTime.map((item, index) => {
         return (
           <li

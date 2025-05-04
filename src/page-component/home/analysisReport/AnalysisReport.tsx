@@ -1,5 +1,4 @@
 import { getCountChart, getSumIRL, getSumPPS } from "@/queries/home";
-import Link from "next/link";
 
 const AnalysisReport = async () => {
   const { count } = await getCountChart();
@@ -13,11 +12,13 @@ const AnalysisReport = async () => {
           <span className="text-low-100 text-[50px]">{count}</span>
         </div>
         <span className="text-light-100 text-[18px] font-normal">
-          Number Of{" "}
-          <Link href={"#"} className="underline text-prm-100">
-            {" "}
-            Mitigated{" "}
-          </Link>
+          Number Of
+          <a
+            href={"#"}
+            className=" text-prm-100 w-[182px] border-b border-b-prm-100 h-[28px] px-2"
+          >
+            Mitigated
+          </a>
           Attacks
         </span>
       </div>

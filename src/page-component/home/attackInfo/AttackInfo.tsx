@@ -23,7 +23,7 @@ const AttackInfo = async () => {
         <img src="/rocket.png" alt="Rocket" />
         <div className="flex flex-col  ">
           <span className="text-2xl">Maximum Attack Volumes</span>
-          <span className="text-base font-normal">BITS</span>
+          <span className="text-base font-normal text-light-80">BITS</span>
         </div>
       </div>
       <div className="flex flex-col gap-0.5">
@@ -35,11 +35,10 @@ const AttackInfo = async () => {
           Maximum Volume <br /> Of The{" "}
           <a
             href={"#"}
-            className=" text-prm-100 w-[182px] border-b border-b-prm-100 h-[28px]"
+            className=" text-prm-100 w-[182px] border-b border-b-prm-100 h-[28px] px-2"
           >
-            {" "}
-            Mitigated{" "}
-          </a>{" "}
+            Mitigated
+          </a>
           Attacks
         </span>
       </div>

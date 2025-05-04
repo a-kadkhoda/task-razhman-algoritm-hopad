@@ -1,4 +1,5 @@
 import AnalysisReport from "@/page-component/home/analysisReport/AnalysisReport";
+import AttackDuration from "@/page-component/home/attackDuration/AttackDuratin";
 import AttackInfo from "@/page-component/home/attackInfo/AttackInfo";
 import Reporter from "@/page-component/home/reporter/Reporter";
 import TrafficFlowChart from "@/page-component/home/trafficFlowChart/TrafficFlowChart";
@@ -18,9 +19,14 @@ export default function Home() {
             <TrafficFlowChart />
           </div>
         </div>
-        <div className="w-1/2">
-          <div className="h-[310px] w-1/2 ">
-            <AttackInfo />
+        <div className="w-1/2 flex flex-col gap-4">
+          <div className="h-[310px] flex ">
+            <div className="w-1/2">
+              <AttackInfo />
+            </div>
+          </div>
+          <div className="h-[calc((100%-310px)/4)]">
+            <AttackDuration />
           </div>
         </div>
       </div>

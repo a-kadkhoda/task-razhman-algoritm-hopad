@@ -8,9 +8,9 @@ const AttackDuration = async () => {
   const { duration } = await getDuration();
   const d = dayjs.duration(duration);
 
-  const days = d.days(); // 0–30 (for part of a month)
-  const hours = d.hours(); // 0–23
-  const minutes = d.minutes(); // 0–59
+  const days = d.days();
+  const hours = d.hours();
+  const minutes = d.minutes();
   return (
     <div className="border relative border-light-20 bg-sc-100 size-full  flex flex-col gap-y-4 overflow-hidden">
       <img src="/disk.png" alt="disk" className="w-[200px] absolute top-0" />

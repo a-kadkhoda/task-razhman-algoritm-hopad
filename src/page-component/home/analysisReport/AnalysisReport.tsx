@@ -6,7 +6,7 @@ const AnalysisReport = async () => {
   const { sum: sumPPS } = await getSumPPS();
   const { sum: sumIRL } = await getSumIRL();
   return (
-    <div className="flex h-full justify-center items-center border border-light-20 bg-sc-100">
+    <div className="flex h-full justify-center items-center border border-light-20 bg-sc-100 overflow-hidden">
       <div className="flex flex-col justify-center items-center w-2/5 h-full px-8 border-r border-r-light-20">
         <div className="flex flex-col justify-center items-center ">
           <img src="/lineChart.png" alt="lineChart" className="size-[68px]" />
@@ -21,7 +21,7 @@ const AnalysisReport = async () => {
           Attacks
         </span>
       </div>
-      <div className="w-3/5 h-full p-8 flex flex-col gap-[29px]">
+      <div className="w-3/5 h-full p-8 flex flex-col gap-[29px] ">
         <span className="text-light-100 text-[20px] font-semibold">
           Cumulative Sum of Mitigated DDoS Attacks
         </span>
@@ -33,7 +33,7 @@ const AnalysisReport = async () => {
             <span className="text-[50px] overflow-x-scroll scrollbar-hide ">
               {sumPPS}
             </span>
-            <p className="text-light-40 text-[20px]">
+            <p className="text-light-40 text-[20px] ">
               Total Number of <span className="underline">Dropped Packets</span>
             </p>
           </div>

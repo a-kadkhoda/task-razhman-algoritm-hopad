@@ -18,3 +18,13 @@ export const getChart = async () => {
   const data = await res.json();
   return data;
 };
+export const getTopFiveIrl = async () => {
+  const res = await fetch("https://api-ddos.tic.ir/api/top-five-lrl");
+  const data = await res.json();
+  return data;
+};
+export const getDuration = async () => {
+  const res = await fetch("https://api-ddos.tic.ir/api/duration");
+  const data = await res.json();
+  return data;
+};

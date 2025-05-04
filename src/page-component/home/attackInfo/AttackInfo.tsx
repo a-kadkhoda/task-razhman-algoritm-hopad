@@ -33,7 +33,10 @@ const AttackInfo = async () => {
         </div>
         <span className="text-light-100 text-[22px] font-normal ">
           Maximum Volume <br /> Of The{" "}
-          <a href={"#"} className="underline text-prm-100">
+          <a
+            href={"#"}
+            className=" text-prm-100 w-[182px] border-b border-b-prm-100 h-[28px]"
+          >
             {" "}
             Mitigated{" "}
           </a>{" "}
@@ -44,7 +47,7 @@ const AttackInfo = async () => {
         {restOfData.map((item, index) => {
           return (
             <div
-              className="border border-light-20 px-2 h-[27px] text-base font-normal"
+              className="border border-light-20 h-[27px] px-2 text-sm font-normal flex items-center"
               key={index}
             >
               {item} Gbps

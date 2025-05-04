@@ -12,7 +12,7 @@ const AttackDuration = async () => {
   const hours = d.hours();
   const minutes = d.minutes();
   return (
-    <div className="border relative border-light-20 bg-sc-100 size-full  flex flex-col gap-y-4 overflow-hidden">
+    <div className="border relative border-light-20 bg-sc-100 size-full  flex flex-col  overflow-hidden">
       <img src="/disk.png" alt="disk" className="w-[200px] absolute top-0" />
 
       <div className=" flex ml-[237px] gap-x-6 mt-[21px]">

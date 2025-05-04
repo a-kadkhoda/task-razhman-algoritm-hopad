@@ -14,9 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="dark">
-      <body className="dark:bg-dark min-h-screen flex">
+      <body className="dark:bg-dark min-h-screen flex ">
         <Sidebar />
-        <div className="flex flex-col flex-1 min-h-screen ">
+        <div className="flex flex-col flex-1 min-h-screen w-[calc(100vw-184px)] ">
           <Navbar />
           <main className="flex-1 min-h-[calc(100vh-166px)]">{children}</main>
         </div>

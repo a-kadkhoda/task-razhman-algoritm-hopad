@@ -4,7 +4,7 @@ import NowDate from "./NowDate";
 
 const Navbar = () => {
   return (
-    <div className="text-light-100 h-[102px] flex items-center w-full">
+    <div className="text-light-100 h-[102px] flex items-center w-full px-8">
       <div className="w-full flex justify-between">
         <span>TIC DDoS Radar</span>
         <div className="flex flex-row-reverse gap-x-6">
